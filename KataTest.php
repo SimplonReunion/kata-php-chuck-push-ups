@@ -10,12 +10,6 @@ class KataTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals(11, chuckPushUps('1000 "Did you kick someone in the face today?" 1001 1010 "Will I be making dinner then?!" 1011'));
     }
 
-    public function testReverseCount()
-    {
-        $this->markTestSkipped();
-        $this->assertEquals(16, chuckPushUps('10000 "Nice Beard" 1111 "Are you wearing denim shorts?" 1110 1101'));
-    }
-
     public function testEmptyStringProvided()
     {
         $this->markTestSkipped();
@@ -32,6 +26,18 @@ class KataTest extends \PHPUnit_Framework_TestCase
     {
         $this->markTestSkipped();
         $this->assertEquals('FAIL!!', chuckPushUps(1));
+    }
+
+    public function testReverseCount()
+    {
+        $this->markTestSkipped();
+        $this->assertEquals(16, chuckPushUps('10000 "Nice Beard" 1111 "Are you wearing denim shorts?" 1110 1101'));
+    }
+
+    public function testCountInWifeWords()
+    {
+        $this->markTestSkipped();
+        $this->assertEquals(16, chuckPushUps('10000 "What does mean 10000?" 1111 "And now 1111 do you know how to count ?" 1110 1101'));
     }
 
     public function testCharactersBetweenDigit()
